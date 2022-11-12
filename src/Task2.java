@@ -20,18 +20,13 @@ public class Task2 {
 
     public static boolean isPalindrome(String word){
         String newWord = word.toLowerCase();
-        boolean isPalindrome = false;
 
         for(int i = 1; i <= newWord.length(); i++){
             if(newWord.charAt(i - 1) != newWord.charAt(newWord.length() - i)){
-                isPalindrome = false;
-            }
-            else {
-                isPalindrome = true;
+                return false;
             }
         }
-
-        return isPalindrome;
+        return true;
     }
 
 }
