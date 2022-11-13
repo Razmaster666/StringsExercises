@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Task5 {
 
 //    Copy this String to a main method:
@@ -17,5 +19,17 @@ public class Task5 {
 
     public static void main(String[] args) {
 
+        String fruits = "Apple 5,Banana 7,Lemon 3";
+
+        String [] fruitsSplit = fruits.split(",");
+        System.out.println(Arrays.toString(fruitsSplit));
+        System.out.println();
+
+        String [] newArr = new String[fruitsSplit.length];
+
+        for (int i = 0; i < fruitsSplit.length; i++){
+         newArr = fruitsSplit[i].split(" ");
+            System.out.println("The price of " + newArr[0] + " is " + newArr[1]);
+        }
     }
 }
