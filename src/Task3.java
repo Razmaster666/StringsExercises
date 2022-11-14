@@ -21,8 +21,8 @@ public class Task3 {
 
         String[] namesSplit = names.split(",");
 
-        for(String i : namesSplit){
-            System.out.println("Remember to buy: " + i + "!");
+        for(String name : namesSplit){
+            System.out.println("Remember to buy: " + name + "!");
         }
 
     }
