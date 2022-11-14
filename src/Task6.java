@@ -32,7 +32,7 @@ public class Task6 {
         System.out.println();
 
         System.out.println("""
-<html>
+    <html>
     <body>
         <h1>Book Store</h1>
         <ul>
