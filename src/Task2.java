@@ -21,7 +21,7 @@ public class Task2 {
     public static boolean isPalindrome(String word){
         String newWord = word.toLowerCase();
 
-        for(int i = 1; i <= newWord.length(); i++){
+        for(int i = 1; i <= newWord.length() / 2; i++){
             if(newWord.charAt(i - 1) != newWord.charAt(newWord.length() - i)){
                 return false;
             }
