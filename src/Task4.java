@@ -13,8 +13,8 @@ public class Task4 {
 
         String[] namesSplit = names.split(",");
 
-        for(String i : namesSplit){
-            System.out.println("Remember to buy: " + (i.trim()) + "!");
+        for(String name : namesSplit){
+            System.out.println("Remember to buy: " + (name.trim()) + "!");
         }
 
     }
