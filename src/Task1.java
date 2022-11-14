@@ -20,13 +20,10 @@ public class Task1 {
             System.out.print("Enter number of lines: ");
             int linesInput = Integer.valueOf(scanner.nextLine());
 
-            int help = 1;
-
             for (int i = 1; i <= linesInput; i++){
-                for (int j = 1; j <= help; j++){
-                    System.out.print(help);
+                for (int j = 1; j <= i; j++){
+                    System.out.print(i);
                 }
-                help++;
                 System.out.println();
             }
     }
