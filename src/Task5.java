@@ -25,9 +25,15 @@ public class Task5 {
         System.out.println(Arrays.toString(fruitsSplit));
         System.out.println();
 
-        for (int i = 0; i < fruitsSplit.length; i++){
-            String [] newArr = fruitsSplit[i].split(" ");
+//        for (int i = 0; i < fruitsSplit.length; i++){
+//            String [] newArr = fruitsSplit[i].split(" ");
+//            System.out.println("The price of " + newArr[0] + " is " + newArr[1]);
+//        }
+
+        for (String fruit : fruitsSplit){
+            String [] newArr = fruit.split(" ");
             System.out.println("The price of " + newArr[0] + " is " + newArr[1]);
         }
+
     }
 }
